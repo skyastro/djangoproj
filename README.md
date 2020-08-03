@@ -3,11 +3,13 @@ This project is to design a website to display records from Django models using 
 displays the summary list of all records.  When the name is selected, it shows the details for any records selected from the home page.
 
 <br>
+
 ## Features
 - On the homepage, it shows the list of staff appointment.  The data is preset in database.<br>
 - When the url of name is selected, it will direct to other page which will display the staff info.
 
 <br>
+
 ## Technologies used in web development
 
 - #### HTML5
@@ -19,6 +21,7 @@ displays the summary list of all records.  When the name is selected, it shows t
 - #### Django
 
 <br>
+
 ## Testing
 The fields displayed and all links were tested. The website can be tested at [Django project](https://appstinfoa.herokuapp.com).
 
