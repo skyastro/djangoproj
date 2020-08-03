@@ -24,7 +24,6 @@ class Employee(models.Model):
 
 
 class Benefit(models.Model):
-    # In this class we need to know just the name of each conference that the staff has:
     name = models.CharField(max_length=20)
     
     def __str__(self):
