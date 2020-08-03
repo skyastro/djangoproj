@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: #ffefcc;
+}
+/* Containers */
+.container-wrapper--color {
+    background-color:  #ffa64d;
+    color: white;
+}
+.callout-container {
+   height: 100vh; 
+   width: 103vw;
+   background-size: cover; 
+}
+
+.callout-container1 {
+    height: 100vh;
+    width: 103vw; 
+    background-size: cover;
+}    
+.callout-container2 {
+    height: 100vh;
+    width: 103vw;
+    background-size: cover;
+
+}
+.bkg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.h1 {color: #ff8000;
+    font-size: 4em;}
+.h2 {color: #ff8000;
+    font-size: 3em;}
+
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+/* Navbar */
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    width: 103vw;
+    background-color: rgba(0, 0, 0, .25); 
+    border: 0;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color:rgb(255, 81, 0);
+    padding: 40px;
+} 
+    
+p {
+    font-size:  18px;
+    letter-spacing: 2px;
+}
+
+section {
+    margin: 20px 20px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.fmdesc {
+  margin: 5% 20% 5%;
+}
+
+.subhd1 {
+    color: #034efc;
+}
+
+.content1 {
+    margin: 5% 20% 5%;
+}
+
+footer {
+    margin-top: 15%;
+    background-color:#ffffb3;
+    text-align: center;
+}
+
+.social-networks{
+    text-align: center;
+}
+
+.social-networks li {
+    display:inline;
+}
+
+.social-networks i {
+    padding: 3%;  
+    color:#3366ff;
+} 
+
+

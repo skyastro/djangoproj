@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Staff Info
+{% endblock %}
+{% block content %}
+
+<div>
+    <img src="{% static 'images/bg2.jpg' %}" class="callout-container1 bkg" alt="Info Image"> 
+    <div class="centered h1">Staff Info</div> 
+</div> 
+
+<div class='container fmdesc'>
+    <br>
+    <h3 class='subhd1'>{{employee.first | capfirst}} {{employee.last | capfirst}} - ID#: {{ employee.id }}</h3>
+    <br>
+    <p><strong>Gender: </strong>{{ employee.gender }}</p>
+    <p><strong>Phone Number: </strong>{{employee.phone}}</p>
+    <p><strong>Email: </strong>{{employee.email}}</p>
+    <p><strong>Department: </strong> {{ employee.dept | capfirst }}</p>
+    <p><strong>Start Date: </strong>{{employee.start_date}}</p>
+    {% if employee.end_date %}
+    <p><strong>End Date: </strong> {{ employee.end_date}}</p>
+    {% endif %}
+    <p><strong>Employment Type: </strong> {{ employee.get_emp_type_display | capfirst }}</p>
+    <p><strong>Position: </strong> {{ employee.position | capfirst }}</p>
+    {% if employee.benefits.all %}
+     <p><strong>Benefits Coverage:</strong></p>
+     <ul>
+     {% for item in employee.benefits.all %}
+        <li>{{ item }}</li>            
+     {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+
+    
+{% endblock content %}

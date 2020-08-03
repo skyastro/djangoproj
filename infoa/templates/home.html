@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Staff Appointment
+{% endblock title %}
+
+{% block content %}
+
+<div>
+    <img src="{% static 'images/bg1.jpg' %}" class="callout-container bkg" alt="Home Image"> 
+    <div class="centered h1">Staff Appointment</div> 
+</div>    
+
+{% for emp in employees %}
+<div class='container fmdesc'> 
+    <h3><a href="{% url 'emp_detail' emp.id %}">{{ emp.first | capfirst }} {{ emp.last | capfirst }} - ID#: {{ emp.id }}</a></h3>
+    <br>
+    <!-- Adding a few details for each staff-->
+    <p><strong>Start Date: </strong>{{emp.start_date}}</p>
+    {% if emp.end_date %}
+    <p><strong>End Date: </strong> {{ emp.end_date}}</p>
+    {% endif %}
+    <p><strong>Employment Type: </strong> {{ emp.get_emp_type_display | capfirst }}</p>
+    <p><strong>Position: </strong> {{ emp.position | capfirst }}</p>
+</div>
+{% endfor %}
+{% endblock content %}
