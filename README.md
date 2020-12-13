@@ -19,6 +19,7 @@ displays the summary list of all records.  When the name is selected, it shows t
 - #### Javascript
 - #### Python
 - #### Django
+- #### SQLite
 
 <br>
 
