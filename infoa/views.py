@@ -16,8 +16,8 @@ def home(request): # it takes a "request" as an argument, we can set the paramet
     employees = Employee.objects.all()
     return render(request,'home.html',{'employees':employees})
 
-# def student_detail ==> for the student detail page
-# this function requires the student_id as a second parameter
+# def emp_detail ==> for the employee detail page
+# this function requires the emp_id as a second parameter
 def emp_detail(request, emp_id):
     try:
         employee = Employee.objects.get(id=emp_id)
@@ -25,10 +25,7 @@ def emp_detail(request, emp_id):
         raise Http404('Sorry, Employee not found!')
     return render(request,'emp_detail.html',{'employee':employee})
 
-# def about ==> for the about us (me) page
+# def about ==> for the about the project page
 # about function has the required argument "request" and so on for all the functions
 def about(request):
-    module_name="Learning Django Framework"
-    course_list = ['HTML and CSS','Bootstrap','JavaScript','Python','Flask Framework','Django Framework']
-    var_type = type(course_list)
-    return render(request,'about.html',{'language':'Python','module_name':module_name, 'module_id':11, 'course_list':course_list, 'var_type':var_type})
+    return render(request,'about.html')
